@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: url(image/fundo_1.png);
+}
+header{
+    width: 100%;
+    height: 80px;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+}
+header .logo{
+    width: 50%;
+}
+header .logo img{
+    width: 140px;
+}
+header .menu ul{
+    display: flex;
+}
+header .menu ul li{
+    padding: 0 20px;
+    list-style: none;
+}
+header .menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    transition: 0.5s ease;
+}
+header .menu ul li a.resume{
+    background-color: #064283;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+header .menu ul li a:hover{
+    color:#156fc3;
+}
+
+/*===== Main Home =====*/
+
+#home .container{
+    width: 100%;
+    height: 100vh;
+}
+#home .container .title{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 60px;
+}
+#home .container .title h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 8rem;
+    letter-spacing: 5px;
+}
+#home .container .title h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 40px;
+    margin-left: 30px;
+}
+#home .container .title h3{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 30px;
+    margin-left: 35px;
+    margin-top: 30px;
+}
+
+/*===== About =====*/
+
+#about .container{
+    width: 100%;
+    height: 100vh;
+    background: url(image/fundo_2.png);
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+}
+#about .container .title{
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 60px;
+}
+#about .container .title h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: left;
+}
+#about .container .title p{
+    color: #fff;
+    width: 500px;
+    margin-top: 30px;
+}
+#about .container .box-title{
+    width: 420px;
+    height: 37vh;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+#about .container .box-title span{
+    color: #fff;
+}
+#about .container .box-title .b1{
+    width: 400px;
+    height: 4px;
+    background: #fff;
+    margin-top: 44px;
+    border-radius: 5px;
+}
+#about .container .box-title .b2{
+    width: 280px;
+    height: 4px;
+    background: #156fc3;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+#about .container .box-title .b3{
+    width: 80px;
+    height: 4px;
+    background: #156fc3;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+#about .container .box-title .b4{
+    width: 120px;
+    height: 4px;
+    background: #156fc3;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+#about .container .box-title .b5{
+    width: 200px;
+    height: 4px;
+    background: #156fc3;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+#about .container .box-title .b6{
+    width: 30px;
+    height: 4px;
+    background: #156fc3;
+    margin-top: 5px;
+    border-radius: 5px;
+}
