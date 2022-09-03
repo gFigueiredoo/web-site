@@ -58,6 +58,26 @@ header .menu ul li a:hover{
     height: 100vh;
     background: #1d1d1d;
 }
+#home .container .icons{
+    width: 10%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 60px;
+    position: fixed;
+    z-index: 999;
+    color: #fff;
+}
+#home .container .icons ion-icon{
+    padding: 30px 0;
+    font-size: 2rem;
+    color: #fff;
+    transition: 0.5s ease;
+}
+#home .container .icons ion-icon:hover{
+    color: #156fc3;
+}
 #home .container .title{
     width: 90%;
     height: 100vh;
@@ -69,7 +89,7 @@ header .menu ul li a:hover{
     padding: 0 60px;
 }
 #home .container .title h1{
-    font-size: 4rem;
+    font-size: 4.7rem;
     letter-spacing: 3px;
     display: block;
     color: #fff;
@@ -85,7 +105,7 @@ header .menu ul li a:hover{
     left: -1.8rem;
 }
 #home .container .title h1:after {
-    content: '<h1>';
+    content: '<h1/>';
     font-family: 'La Belle Aurore',cursive;
     color: #515152;
     font-size: 1rem;
@@ -128,74 +148,131 @@ header .menu ul li a:hover{
     background: #1d1d1d;
     background-size: cover;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;     
 }
-#about .container .title{
+#about .container .my-self{
     width: 90%;
     height: 100vh;
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
-    justify-content: center;
     padding: 0 60px;
 }
-#about .container .title h1{
+#about .container .my-self .text-zone h1{
     color: #fff;
-    text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: left;
+    position: relative;
+    letter-spacing: 3px;
+    display: block;
 }
-#about .container .title p{
+#about .container .my-self .text-zone h1:before{
+    content: '<h2>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 1rem;
+    position: absolute;
+    margin-top: -1.8rem;
+    left: -1.8rem;
+}
+#about .container .my-self .text-zone h1:after{
+    content: '<h2/>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 1rem;
+    position: absolute;
+    margin-top: 3.5rem;
+    left: -1.8rem;
+}
+#about .container .my-self .text-zone p{
     color: #fff;
-    width: 500px;
-    margin-top: 30px;
+    width: 740px;
+    font-size: 1rem;
+    margin-top: 54px;
+    letter-spacing: 4px;
+    line-height: 24px;
+    display: block;
+    position: relative;
 }
-#about .container .box-title{
-    width: 420px;
-    height: 37vh;
-    margin-top: 20px;
-    padding: 0 10px;
+#about .container .my-self .text-zone p:before{
+    content: '<p>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 1.2rem;
+    position: absolute;
+    margin-top: -1.8rem;
+    left: -1.8rem;
 }
-#about .container .box-title span{
+#about .container .my-self .text-zone p:after{
+    content: '<p>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 1.2rem;
+    position: absolute;
+    margin-top: 1.8rem;
+    left: -1.8rem;
+}
+#about .container .my-self .text-zone a{
+    text-decoration: none;
+    color: #156fc3;
+    transition: 0.5s ease;
+}
+#about .container .my-self .text-zone a:hover{
+    color: #104980;
+}
+#about .container .my-self .box-title{
+    width: 100%;
+    height: 44vh;
+    
+    position: relative;
+}
+#about .container .my-self .box-title span{
     color: #fff;
 }
-#about .container .box-title .b1{
-    width: 400px;
+#about .container .my-self .box-title .b1{
+    width: 700px;
     height: 4px;
     background: #fff;
-    margin-top: 44px;
+    margin-bottom: 44px;
     border-radius: 5px;
 }
-#about .container .box-title .b2{
+#about .container .my-self .box-title .b2{
     width: 280px;
     height: 4px;
     background: #156fc3;
     margin-top: 5px;
     border-radius: 5px;
 }
-#about .container .box-title .b3{
+#about .container .my-self .box-title .b3{
     width: 80px;
     height: 4px;
     background: #156fc3;
     margin-top: 5px;
     border-radius: 5px;
 }
-#about .container .box-title .b4{
+#about .container .my-self .box-title .b4{
     width: 120px;
     height: 4px;
     background: #156fc3;
     margin-top: 5px;
     border-radius: 5px;
 }
-#about .container .box-title .b5{
+#about .container .my-self .box-title .b5{
     width: 200px;
     height: 4px;
     background: #156fc3;
     margin-top: 5px;
     border-radius: 5px;
 }
-#about .container .box-title .b6{
+#about .container .my-self .box-title .b6{
+    width: 30px;
+    height: 4px;
+    background: #156fc3;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+#about .container .my-self .box-title .b7{
     width: 30px;
     height: 4px;
     background: #156fc3;
