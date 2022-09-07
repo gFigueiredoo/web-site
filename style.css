@@ -251,6 +251,7 @@ header .menu ul li a.resume:hover{
     background: #dc2fe2;
     margin-top: 5px;
     border-radius: 5px;
+    box-shadow: 0 0 200px 0 rgba(21,111,195,0.5);
 }
 #about .container .my-self .box-title .b3{
     width: 20%;
