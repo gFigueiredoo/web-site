@@ -132,7 +132,7 @@ header .menu ul li a.resume:hover{
     color: #515152;
     font-size: 1.2rem;
     position: absolute;
-    margin-top: 1.8rem;
+    margin-top: -1.8rem;
     left: -1.8rem;
 }
 #home .container .title p:after{
@@ -141,7 +141,7 @@ header .menu ul li a.resume:hover{
     color: #515152;
     font-size: 1.2rem;
     position: absolute;
-    margin-top: -1.8rem;
+    margin-top: 1.8rem;
     left: -1.8rem;
 }
 
@@ -474,4 +474,61 @@ footer .icons ion-icon{
 }
 footer .icons ion-icon:hover{
     color: #156fc3;
+}
+
+@media screen and (max-width: 960px){
+    #about .container .my-self .text-zone p{
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    header .logo img {
+        padding-left: 25px;
+    }
+    
+    /*===== Main Home =====*/
+    #home .container .icons{
+        padding: 0 25px;
+    }
+    #home .container .title h1{
+        font-size: 3.2rem;
+    }
+
+    #home .container .title p{
+        font-size: 1.2rem;
+        margin-top: 5rem;
+    }
+
+    /*===== About =====*/
+    #about .container .my-self{
+        flex-wrap: wrap;
+    }
+    #about .container .my-self .text-zone h1{
+        font-size: 2.3rem;
+    }
+    #about .container .my-self .text-zone p{
+        font-size: 0.9rem;
+        margin-top: 70px;
+    }
+    #about .container .my-self .box-title{
+        margin-top: 125px;
+    }
+    #about .container .my-self .box-title span{
+        color: #fff;
+    }
+    
+    /*===== Contact =====*/
+    #contact .content-contact .contact-left h1{
+        font-size: 1.7rem;
+    }
+    #contact .content-contact .linha{
+        height: 2px;
+    }
+    #contact .content-contact .contact-left ion-icon{
+        font-size: 1.7rem;
+    }
+    #contact .content-contact .contact-left span{
+        font-size: 1.1rem;
+    }
 }
