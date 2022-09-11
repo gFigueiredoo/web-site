@@ -55,7 +55,12 @@ header .menu ul li a.resume:hover{
     background-color: #075bb4;
     color: #fff;
 }
-
+header .menu-mobile{
+    display: none;
+}
+header .btn-mobile{
+    display: none;
+}
 /*===== Main Home =====*/
 
 #home .container{
@@ -130,7 +135,7 @@ header .menu ul li a.resume:hover{
     content: '<p>';
     font-family: 'La Belle Aurore',cursive;
     color: #515152;
-    font-size: 1.2rem;
+    font-size: 1rem;
     position: absolute;
     margin-top: -1.8rem;
     left: -1.8rem;
@@ -139,7 +144,7 @@ header .menu ul li a.resume:hover{
     content: '</p>';
     font-family: 'La Belle Aurore',cursive;
     color: #515152;
-    font-size: 1.2rem;
+    font-size: 1rem;
     position: absolute;
     margin-top: 1.8rem;
     left: -1.8rem;
@@ -206,7 +211,7 @@ header .menu ul li a.resume:hover{
     content: '<p>';
     font-family: 'La Belle Aurore',cursive;
     color: #515152;
-    font-size: 1.2rem;
+    font-size: 1rem;
     position: absolute;
     margin-top: -1.8rem;
     left: -1.8rem;
@@ -215,7 +220,7 @@ header .menu ul li a.resume:hover{
     content: '</p>';
     font-family: 'La Belle Aurore',cursive;
     color: #515152;
-    font-size: 1.2rem;
+    font-size: 1rem;
     position: absolute;
     margin-top: 1.8rem;
     left: -1.8rem;
@@ -398,7 +403,7 @@ header .menu ul li a.resume:hover{
     content: '<section>';
     font-family: 'La Belle Aurore',cursive;
     color: #515152;
-    font-size: 1.2rem;
+    font-size: 1rem;
     position: absolute;
     margin-top: -2.4rem;
     left: -1.8rem;
@@ -408,7 +413,7 @@ header .menu ul li a.resume:hover{
     content: '</section>';
     font-family: 'La Belle Aurore',cursive;
     color: #515152;
-    font-size: 1.2rem;
+    font-size: 1rem;
     position: absolute;
     margin-top: -1.2rem;
     left: -1.8rem;
@@ -477,24 +482,25 @@ footer .icons ion-icon:hover{
 }
 
 @media screen and (max-width: 960px){
+    header .logo img {
+        padding-left: 25px;
+    }
+    #home .container .title h1{
+        font-size: 3rem;
+    }
+    #home .container .title p {
+        margin-top: 5rem;
+    }
     #about .container .my-self .text-zone p{
         line-height: 20px;
     }
 }
 
 @media screen and (max-width: 768px){
-    header .logo img {
-        padding-left: 25px;
-    }
-    
     /*===== Main Home =====*/
     #home .container .icons{
         padding: 0 25px;
     }
-    #home .container .title h1{
-        font-size: 3.2rem;
-    }
-
     #home .container .title p{
         font-size: 1.2rem;
         margin-top: 5rem;
@@ -530,5 +536,91 @@ footer .icons ion-icon:hover{
     }
     #contact .content-contact .contact-left span{
         font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 624px){
+    header .logo img {
+        padding-left: 0px;
+    }
+    header .menu{
+        display: none;
+    }
+    header .btn-mobile{
+        display: block;
+    }
+    header .btn-mobile ion-icon{
+        color: #fff;
+        font-size: 1.5rem;
+    }
+    header .menu-mobile{
+        display: none;
+        width: 50%;
+        height: 20vh;
+        box-shadow:  0 0 15px 0 rgba(21,111,195,0.5);
+        position: fixed;
+        top: 20px;
+        border-radius: 10px;
+        background: #156fc3;
+    }
+    header .menu-mobile ul{
+        text-align: center;
+    }
+    header .menu-mobile ul li{
+        list-style: none;
+        padding: 12px 0;
+    }
+    header .menu-mobile ul li a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    #home .container .icons {
+        display: none;
+    }
+    #home .container .title h1{
+        font-size: 2rem;
+    }
+    #home .container .title p {
+        margin-top: 6rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    /*===== Main Home =====*/
+    #home .container .title h1{
+        font-size: 2.6rem;
+    }
+    #home .container .title h1:after {
+        margin-top: 4rem;
+    }
+    #home .container .title p{
+        font-size: 0.7rem;
+        margin-top: 5rem;
+    }
+    #home .container .title p:after {
+        margin-top: 0.8000000000000007rem;
+    }
+    #home .container .title p:before {
+        margin-top: -1.4rem;
+    }
+    #contact .container .content-contact .contact-left:before {
+        font-size: 1rem;
+    }
+    #contact .content-contact .linha {
+        width: 280px;
+        height: 1px;
+    }
+}
+@media screen and (max-width: 390px){
+    /*===== Main Home =====*/
+    #home .container .title h1{
+        font-size: 2.1rem;
+    }
+    #about .container .my-self .text-zone h1 {
+        font-size: 1.9rem;
+    }
+    #contact .content-contact .linha {
+        width: 240px;
     }
 }
