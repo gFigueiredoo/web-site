@@ -350,6 +350,11 @@ header .menu ul li a.resume:hover{
     font-weight: 400;
     line-height: 35px;
     text-decoration: none;
+    color: #fff;
+    transition: 0.5s ease;
+}
+#port .container .cards .card .post-title-card h5 a:hover{
+    color: #074d97;
 }
 #port .container .cards .card .post-body-card{
     font-size: 16px;
@@ -360,14 +365,13 @@ header .menu ul li a.resume:hover{
     margin-top: 15px;
     display: block;
 }
-
 #port .container .cards .card .post-body-card a{
     text-decoration: none;
     color: #fff;
     transition: 0.5s ease;
 }
 #port .container .cards .card .post-body-card a:hover{
-    color: rgb(78, 109, 248);
+    color: #074d97;
 }
 
 /*===== Contact =====*/
