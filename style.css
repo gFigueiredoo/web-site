@@ -361,6 +361,15 @@ header .menu ul li a.resume:hover{
     display: block;
 }
 
+#port .container .cards .card .post-body-card a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s ease;
+}
+#port .container .cards .card .post-body-card a:hover{
+    color: rgb(78, 109, 248);
+}
+
 /*===== Contact =====*/
 #contact .container{
     width: 100%;
