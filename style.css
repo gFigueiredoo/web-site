@@ -512,12 +512,10 @@ footer .icons ion-icon:hover{
     }
     #about .container .my-self .text-zone h1{
         font-size: 2.3rem;
-        text-align: center;
     }
     #about .container .my-self .text-zone p{
         font-size: 0.9rem;
         margin-top: 70px;
-        text-align: center;
     }
     #about .container .my-self .box-title{
         margin-top: 125px;
@@ -591,7 +589,7 @@ footer .icons ion-icon:hover{
         text-align: center;
     }
     #about .container .my-self .text-zone h1 {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
     #about .container .my-self .text-zone h1:after {
         margin-top: 1.5rem;
@@ -618,12 +616,6 @@ footer .icons ion-icon:hover{
     }
     #home .container .title p:before {
         margin-top: -1.4rem;
-    }
-    #about .container .my-self .text-zone h1 {
-        font-size: 1.5rem;
-    }
-    #about .container .my-self .text-zone h1:after {
-        margin-top: 1.9rem;
     }
     #contact .container .content-contact .contact-left:before {
         font-size: 1rem;
