@@ -584,19 +584,6 @@ footer .icons ion-icon:hover{
     #home .container .title p {
         margin-top: 6rem;
     }
-    #about .container {
-        justify-content: center;
-        text-align: center;
-    }
-    #about .container .my-self .text-zone h1 {
-        font-size: 1.2rem;
-    }
-    #about .container .my-self .text-zone h1:after {
-        margin-top: 1.5rem;
-    }
-    #about .container .my-self .box-title {
-        text-align: initial;
-    }
 }
 
 @media screen and (max-width: 480px){
@@ -632,5 +619,17 @@ footer .icons ion-icon:hover{
     }
     #home .container .title p {
         font-size: 0.49rem;
+    }
+    #about .container .my-self .text-zone h1 {
+        font-size: 1.9rem;
+    }
+    #about .container .my-self .text-zone p {
+        font-size: 0.5rem;
+    }
+    #about .container .my-self .text-zone h1 {
+        font-size: 1.6rem;
+    }
+    #about .container .my-self .text-zone h1:after {
+        margin-top: 2.5rem;
     }
 }
