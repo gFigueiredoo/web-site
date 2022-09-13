@@ -88,6 +88,9 @@ header .btn-mobile{
 #home .container .icons ion-icon:hover{
     color: #156fc3;
 }
+#home .container .title-mobile{
+    display: none;
+}
 #home .container .title{
     width: 90%;
     height: 100vh;
@@ -151,7 +154,6 @@ header .btn-mobile{
 }
 
 /*===== About =====*/
-
 #about .container{
     width: 100%;
     background: #1d1d1d;
@@ -166,6 +168,9 @@ header .btn-mobile{
     flex-direction: row;
     align-items: center;
     padding: 0 60px;
+}
+#about .container .my-self .text-zone-mobile{
+    display: none;
 }
 #about .container .my-self .text-zone{
     width: 100%;
@@ -295,11 +300,9 @@ header .btn-mobile{
 }
 
 /*===== portfolio =====*/
-
 #port .container {
     width: 100%;
 }
-
 #port .container .cards{
     width: 90%;
     display: flex;
@@ -383,7 +386,6 @@ header .btn-mobile{
 #contact .container{
     width: 100%;
 }
-
 #contact .container .content-contact{
     width: 90%;
     height: 80vh;
@@ -457,7 +459,6 @@ header .btn-mobile{
 }
 
 /*===== Footer ===== */
-
 footer{
     color: #fff;
     width: 100%;
@@ -578,65 +579,109 @@ footer .icons ion-icon:hover{
     #home .container .icons {
         display: none;
     }
-    #home .container .title h1{
-        font-size: 2rem;
+    #home .container .title{
+        display: none;
     }
-    #home .container .title p {
-        margin-top: 6rem;
+    #home .container .title-mobile{
+        width: 90%;
+        height: 100vh;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 60px;
+    }
+    #home .container .title-mobile h1{
+        color: #fff;
+        font-size: 3.1rem;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+    }
+    #home .container .title-mobile h2{
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        letter-spacing: 30px;
+        margin-top: 10px;
+        margin-left: 22px;
+    }
+    #home .container .title-mobile h3{
+        color: #8d8d8d;
+        text-transform: uppercase;
+        font-size: 0.6rem;
+        letter-spacing: 9px;
+        margin-left: 4px;
+        margin-top: 30px;
+    }
+    #about .container .my-self .text-zone{
+        display: none;
+    }
+    #about .container .my-self .text-zone-mobile{
+        width: 100%;
+        display: block;
+        
+    }
+    #about .container .my-self .text-zone-mobile h1{
+        color: #156fc3;
+        font-size: 2rem;
+        text-align: center;
+        position: relative;
+        letter-spacing: 3px;
+    }
+    #about .container .my-self .text-zone-mobile p{
+        color: #fff;
+        font-size: 1em;
+        margin-top: 54px;
+        letter-spacing: 4px;
+        line-height: 24px;
+        position: relative;
+        text-align: center;
+    }
+    #about .container .my-self .text-zone-mobile a{
+        text-decoration: none;
+        color: #156fc3;
+        transition: 0.5s ease;
+    }
+    #about .container .my-self .text-zone-mobile a:hover{
+        color: #074d97;
+    }
+
+    /*===== Contact =====*/
+    #contact .container .content-contact .contact-left:before{
+        display: none;
+    }
+    #contact .container .content-contact .contact-left:after{
+        display: none;
     }
 }
 
 @media screen and (max-width: 480px){
     /*===== Main Home =====*/
-    #home .container .title h1{
-        font-size: 2.6rem;
+    #home .container .title-mobile h1{
+        font-size: 2.9rem;
     }
-    #home .container .title h1:after {
-        margin-top: 4rem;
+    #home .container .title-mobile h2{
+        font-size: 0.5rem;
     }
-    #home .container .title p{
-        font-size: 0.7rem;
-        margin-top: 5rem;
+    #home .container .title-mobile h3{
+        font-size: 0.5rem;
     }
-    #home .container .title p:after {
-        margin-top: 0.8000000000000007rem;
+
+    /*===== About =====*/
+    #about .container .my-self .text-zone-mobile h1{
+        font-size: 1.6rem;
     }
-    #home .container .title p:before {
-        margin-top: -1.4rem;
+    #about .container .my-self .text-zone-mobile p{
+        font-size: 0.8rem;
     }
+    
+    /*===== Contact =====*/
     #contact .container .content-contact .contact-left:before {
         font-size: 1rem;
     }
     #contact .content-contact .linha {
-        width: 280px;
+        width: 272px;
         height: 1px;
-    }
-}
-@media screen and (max-width: 424px){
-    /*===== Main Home =====*/
-    #home .container .title h1{
-        font-size: 1.8rem;
-    }
-    #home .container .title h1:after {
-        margin-top: 2.5rem;
-    }
-    #home .container .title p {
-        margin-top: 50px;
-        font-size: 0.49rem;
-    }
-    #home .container .title p:after {
-        margin-top: 0.5rem;
-    }
-    #about .container .my-self .text-zone h1 {
-        font-size: 1.9rem;
-    }
-    #about .container .my-self .text-zone p {
-        font-size: 0.7rem;
-    }
-    #about .container .my-self .text-zone h1 {
-        font-size: 1.6rem;
-    }
-    #about .container .my-self .text-zone h1:after {
-        margin-top: 2.5rem;
     }
 }
