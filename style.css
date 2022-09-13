@@ -557,7 +557,8 @@ footer .icons ion-icon:hover{
         height: 20vh;
         box-shadow:  0 0 15px 0 rgba(21,111,195,0.5);
         position: fixed;
-        top: 20px;
+        top: 55px;
+        margin-left: 140px;
         border-radius: 10px;
         background: #074d97;
     }
