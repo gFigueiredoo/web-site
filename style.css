@@ -68,11 +68,12 @@ header .btn-mobile{
     background: #1d1d1d;
 }
 #home .container .icons{
-    width: 10%;
+    width: 8%;
     height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 0 54px;
     position: fixed;
     z-index: 999;
@@ -291,7 +292,7 @@ header .btn-mobile{
 }
 #about .container .my-self .box-title .b7{
     width: 10%;
-    height: 4px;
+    height: 2px;
     background: #2622ff;
     margin-top: 5px;
     border-radius: 5px;
@@ -682,5 +683,25 @@ footer .icons ion-icon:hover{
     #contact .content-contact .linha {
         width: 272px;
         height: 1px;
+    }
+}
+
+@media screen and (max-width: 391px){
+    /*===== Main Home =====*/
+    #home .container .title-mobile h1{
+        font-size: 2.5rem;
+    }
+    #home .container .title-mobile h2{
+        font-size: 0.5rem;
+        letter-spacing: 22px;
+    }
+    #home .container .title-mobile h3{
+        font-size: 0.5rem;
+        letter-spacing: 5px;
+    }
+    
+    /*===== About =====*/
+    #about .container .my-self .text-zone-mobile h1{
+        font-size: 1.1rem;
     }
 }
