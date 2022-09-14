@@ -704,4 +704,9 @@ footer .icons ion-icon:hover{
     #about .container .my-self .text-zone-mobile h1{
         font-size: 1.1rem;
     }
+
+    /*===== Contact =====*/
+    #contact .content-contact .linha {
+        width: 226px;
+    }
 }
